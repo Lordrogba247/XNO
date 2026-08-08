@@ -1,0 +1,107 @@
+.contact {
+  background-color: #01001c;
+  padding: 60px 80px 50px;
+  text-align: center;
+}
+
+.contact__heading {
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+
+.contact__grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.contact__block {
+  min-width: 180px;
+}
+
+.contact__label {
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4c8dff;
+  margin: 0 0 10px 0;
+}
+
+.contact__text {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.contact__text a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact__text a:hover {
+  text-decoration: underline;
+}
+
+.contact__socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 4px;
+  justify-content: center;
+}
+
+.contact__social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+}
+
+.contact__social-icon:hover {
+  opacity: 0.85;
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+  .contact {
+    padding: 50px 24px 40px;
+  }
+
+  .contact__grid {
+    gap: 40px;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile - matches Figma: everything stacked, centered */
+@media (max-width: 500px) {
+  .contact {
+    padding: 50px 24px 40px;
+  }
+
+  .contact__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    text-align: center;
+  }
+
+  .contact__block {
+    min-width: unset;
+  }
+
+  .contact__socials {
+    justify-content: center;
+  }
+}

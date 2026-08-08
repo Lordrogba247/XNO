@@ -1,0 +1,146 @@
+.bookings2 {
+  padding: 80px;
+  background-color: #f4f3ef;
+}
+
+.bookings2__container {
+  max-width: 730px;
+}
+
+.bookings2__title {
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 500;
+  font-size: 44px;
+  color: #01001c;
+  margin: 0 0 12px 0;
+}
+
+.bookings2__subtitle {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  color: #1f4b43;
+  margin: 0 0 36px 0;
+}
+
+.bookings2__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #01001c;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  padding: 14px 16px;
+  border: 1px solid #01001c;
+  border-radius: 6px;
+  background-color: transparent;
+  outline: none;
+  color: #01001c;
+  resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0a0a0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1668e3;
+}
+
+.btn--dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background-color: #01001c;
+  color: #ffffff;
+  border: none;
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn--dark:hover {
+  background-color: #14133a;
+}
+
+.btn--dark:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn__arrow {
+  width: 14px;
+  height: 14px;
+}
+
+.bookings2__terms {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #01001c;
+  margin: 0;
+}
+
+.bookings2__terms a {
+  color: #01001c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-status {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.form-status--success {
+  color: #1f4b43;
+}
+
+.form-status--error {
+  color: #c0392b;
+}
+
+@media (max-width: 700px) {
+  .bookings2 {
+    padding: 110px 24px 60px;
+  }
+
+  .bookings2__title {
+    font-size: 32px;
+  }
+}

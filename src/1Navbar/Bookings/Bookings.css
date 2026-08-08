@@ -1,0 +1,130 @@
+.bookings-page {
+  padding: 100px 80px;
+  background-color: #f4f3ef;
+}
+
+.bookings-page__heading {
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 500;
+  font-size: 44px;
+  color: #01001c;
+  margin: 0 0 50px 0;
+}
+
+.bookings-page__grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.booking-card {
+  flex: 1;
+  min-width: 260px;
+  max-width: 340px;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-card__img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.booking-card__title {
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+.booking-card__text {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.booking-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 20px;
+  padding: 13px 87px;
+  border-radius: 30px;
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-size: 14px;
+  text-decoration: none;
+  width: fit-content;
+  transition: opacity 0.2s ease;
+}
+
+.booking-card__btn:hover {
+  opacity: 0.85;
+}
+
+.btn__arrow {
+  width: 13px;
+  height: 13px;
+}
+
+/* Card variants */
+.booking-card--light {
+  background-color: #ffffff;
+}
+.booking-card--light .booking-card__title,
+.booking-card--light .booking-card__text {
+  color: #01001c;
+}
+.booking-card--light .booking-card__btn {
+  background-color: #0b0b1f;
+  color: #ffffff;
+}
+
+.booking-card--dark {
+  background-color: #0b0b1f;
+}
+.booking-card--dark .booking-card__title,
+.booking-card--dark .booking-card__text {
+  color: #ffffff;
+}
+.booking-card--dark .booking-card__btn {
+  background-color: #1668e3;
+  color: #ffffff;
+}
+
+.booking-card--teal {
+  background-color: #1f4b43;
+}
+.booking-card--teal .booking-card__title,
+.booking-card--teal .booking-card__text {
+  color: #ffffff;
+}
+.booking-card--teal .booking-card__btn {
+  background-color: #ffffff;
+  color: #01001c;
+}
+
+@media (max-width: 900px) {
+  .bookings-page {
+    padding: 110px 24px 60px;
+  }
+
+  .bookings-page__heading {
+    font-size: 32px;
+  }
+
+  .bookings-page__grid {
+    justify-content: center;
+  }
+}
