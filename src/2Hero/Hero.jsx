@@ -1,5 +1,10 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
+import heroBg1 from '../assets/herobg.png';
+import heroBg2 from '../assets/herobg2.png';
+import heroBg3 from '../assets/herobg3.png';
+
 function ArrowIcon() {
     return (
         <svg
@@ -20,9 +25,31 @@ function ArrowIcon() {
         </svg>
     );
 }
+
 function Hero() {
+    const slides = [heroBg1, heroBg2, heroBg3];
+    const [current, setCurrent] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % slides.length);
+        }, 5000); // change slide every 5 seconds
+
+        return () => clearInterval(interval);
+    }, [slides.length]);
+
     return (
         <section className="hero">
+            <div className="hero__carousel">
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`hero__slide ${index === current ? 'hero__slide--active' : ''}`}
+                        style={{ backgroundImage: `url(${slide})` }}
+                    ></div>
+                ))}
+            </div>
+
             <div className="hero__overlay"></div>
 
             <div className="hero__content">
@@ -36,12 +63,23 @@ function Hero() {
 
                 <div className="hero__actions">
                     <Link to="/bookings" className="btn btn--primary">
-                        Reserve a Booth <span className="btn__arrow"><ArrowIcon /></span>
+                        Reserve a Booth <ArrowIcon />
                     </Link>
                     <Link to="/events" className="btn btn--outline">
-                        View Events <span className="btn__arrow"><ArrowIcon /></span>
+                        View Events <ArrowIcon />
                     </Link>
                 </div>
+            </div>
+
+            <div className="hero__dots">
+                {slides.map((_, index) => (
+                    <button
+                        key={index}
+                        className={`hero__dot ${index === current ? 'hero__dot--active' : ''}`}
+                        onClick={() => setCurrent(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                    ></button>
+                ))}
             </div>
         </section>
     );
