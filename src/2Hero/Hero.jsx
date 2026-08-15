@@ -63,7 +63,7 @@ function Hero() {
 
                 <div className="hero__actions">
                     <Link to="/bookings" className="btn btn--primary">
-                        Reserve a Booth <ArrowIcon />
+                        Reserve a Table <ArrowIcon />
                     </Link>
                     <Link to="/events" className="btn btn--outline">
                         View Events <ArrowIcon />

@@ -10,6 +10,7 @@ import Footer from './7Footer/Footer';
 import Bookings from './1Navbar/Bookings/Bookings';
 import Bookings2 from './1Navbar/Bookings/Bookings2/Bookings2';
 import Bookings3 from './1Navbar/Bookings/Bookings3/Bookings3';
+import Membership from './Membership/Membership';
 import Events from './1Navbar/Eventz/Events';
 import Gallery from './1Navbar/Gallery/Gallery';
 import Contact from './1Navbar/Contact/Contact';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/membership" element={<Membership />} />
       </Routes>
 
       <Footer />

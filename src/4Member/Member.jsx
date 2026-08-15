@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Member.css';
 import chairImg from '../assets/chair.png';
 
@@ -21,9 +22,9 @@ function Member() {
                     exclusive events, special rewards, and elevated hospitality every
                     time you visit
                 </p>
-                <button className="btn btn--primary">
+                <Link to="/membership" className="btn btn--primary">
                     Become a Member <CrownIcon />
-                </button>
+                </Link>
             </div>
 
             <div className="member__image-wrap">

@@ -1,0 +1,106 @@
+.membership {
+  padding: 140px 80px 100px;
+  background-color: #01001c;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership__container {
+  max-width: 600px;
+  text-align: center;
+}
+
+.membership__title {
+  font-family: "Kalnia", Georgia, serif;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #3b82f6;
+  margin: 0 0 12px 0;
+}
+
+.membership__subtitle {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin: 0 0 40px 0;
+}
+
+.membership__perks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+  margin: 0 auto 40px auto;
+  max-width: 420px;
+}
+
+.perk {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.perk__check {
+  flex-shrink: 0;
+  color: #3b82f6;
+  margin-top: 3px;
+}
+
+.perk__text {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
+
+.membership__note {
+  font-family: "Libre Bodoni", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a0a0c0;
+  margin: 0 0 32px 0;
+}
+
+.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background-color: #1668e3;
+  color: #ffffff;
+  border: 1px solid #1668e3;
+  font-family: "Kalnia", Georgia, serif;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.btn--primary:hover {
+  background-color: #0f57c4;
+}
+
+@media (max-width: 700px) {
+  .membership {
+    padding: 110px 24px 60px;
+  }
+
+  .membership__title {
+    font-size: 30px;
+  }
+
+  .membership__subtitle {
+    font-size: 14px;
+  }
+}
