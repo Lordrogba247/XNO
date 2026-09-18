@@ -43,7 +43,7 @@ function Navbar() {
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/bookings">Bookings</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>
-                <li><Link to="/contact">Contact us</Link></li>
+                <li><Link to="/membership">Membership</Link></li>
             </ul>
 
             <button
@@ -61,7 +61,7 @@ function Navbar() {
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/bookings">Bookings</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>
-                <li><Link to="/contact">Contact us</Link></li>
+                <li><Link to="/membership">Membership</Link></li>
             </ul>
         </nav>
     );

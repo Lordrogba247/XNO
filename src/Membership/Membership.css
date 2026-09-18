@@ -1,106 +1,278 @@
-.membership {
-  padding: 140px 80px 100px;
-  background-color: #01001c;
-  min-height: 80vh;
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Kalnia:wght@100..700&display=swap");
+
+.mp {
+  --mp-bg: #f4f4f6;
+  --mp-navy: #0a0a2e;
+  --mp-card: #ffffff;
+  --mp-text-muted: #6d6d76;
+  --mp-blue: #2b6be0;
+  --mp-blue-text: #1a4fd6;
+  --mp-contact: #0b2a8f;
+  --mp-fees-bg: #02021a;
+  --mp-fees-divider: #1c3a9c;
+  --mp-fees-caption: #d6d6e4;
+
+  --mp-heading: "Kalnia", "Bodoni Moda", Georgia, serif;
+  --mp-body: "Bodoni Moda", "Playfair Display", Georgia, serif;
+
+  min-height: 100vh;
+  padding: clamp(24px, 5vw, 56px) clamp(16px, 4vw, 40px) 64px;
+  background: var(--mp-bg);
+  color: var(--mp-navy);
+  font-family: var(--mp-body);
+  box-sizing: border-box;
+}
+
+.mp *,
+.mp *::before,
+.mp *::after {
+  box-sizing: border-box;
+}
+
+.mp__inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+
+.mp-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: clamp(16px, 3vw, 32px);
+  margin-bottom: clamp(24px, 4vw, 40px);
+  margin-top: clamp(24px, 4vw, 40px);
 }
 
-.membership__container {
-  max-width: 600px;
-  text-align: center;
+.mp-header__throne {
+  width: clamp(88px, 14vw, 132px);
+  height: auto;
+  flex-shrink: 0;
 }
 
-.membership__title {
-  font-family: "Kalnia", Georgia, serif;
-  font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 0.05em;
-  color: #3b82f6;
-  margin: 0 0 12px 0;
+.mp-header__title {
+  width: min-content;
+  margin: 0;
+  font-family: var(--mp-heading);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--mp-navy);
 }
 
-.membership__subtitle {
-  font-family: "Libre Bodoni", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-  opacity: 0.8;
-  margin: 0 0 40px 0;
+/* ---------- Perk cards ---------- */
+
+.mp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.membership__perks {
+.mp-card {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  text-align: left;
-  margin: 0 auto 40px auto;
-  max-width: 420px;
+  gap: 6px;
+  padding: 20px 22px 24px;
+  background: var(--mp-card);
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(10, 10, 46, 0.16);
 }
 
-.perk {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+.mp-card__number {
+  font-family: var(--mp-heading);
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--mp-navy);
 }
 
-.perk__check {
-  flex-shrink: 0;
-  color: #3b82f6;
-  margin-top: 3px;
+.mp-card__title {
+  margin: 4px 0 0;
+  font-family: var(--mp-heading);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--mp-navy);
 }
 
-.perk__text {
-  font-family: "Libre Bodoni", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
+.mp-card__desc {
   margin: 0;
-}
-
-.membership__note {
-  font-family: "Libre Bodoni", Georgia, serif;
+  font-family: var(--mp-body);
+  font-size: 0.85rem;
   font-style: italic;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #a0a0c0;
-  margin: 0 0 32px 0;
+  line-height: 1.5;
+  color: var(--mp-text-muted);
 }
 
-.btn--primary {
+.mp-card__note {
+  color: var(--mp-blue-text);
+}
+
+/* ---------- Fees bar ---------- */
+
+.mp-fees {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 0;
+  padding: 28px clamp(20px, 4vw, 44px);
+  background: var(--mp-fees-bg);
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(10, 10, 46, 0.25);
+}
+
+.mp-fees__label {
+  margin: 0;
+  padding-right: clamp(20px, 4vw, 40px);
+  font-family: var(--mp-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.mp-fees__item {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding-left: clamp(20px, 4vw, 40px);
+  border-left: 1px solid var(--mp-fees-divider);
+}
+
+.mp-fees__amount {
+  font-family: var(--mp-heading);
+  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.mp-fees__caption {
+  margin: 0;
+  max-width: 24ch;
+  font-family: var(--mp-body);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--mp-fees-caption);
+}
+
+/* ---------- CTA + contact ---------- */
+
+.mp-cta {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 14px 32px;
-  border-radius: 30px;
-  background-color: #1668e3;
-  color: #ffffff;
-  border: 1px solid #1668e3;
-  font-family: "Kalnia", Georgia, serif;
-  font-size: 15px;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 10px 60px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--mp-blue);
+  color: #fff;
+  font-family: var(--mp-body);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(43, 107, 224, 0.35);
+  transition: background-color 0.15s ease;
+}
+
+.mp-cta:hover {
+  background: #2158c2;
+}
+
+.mp-cta:focus-visible,
+.mp-contact a:focus-visible {
+  outline: 3px solid var(--mp-navy);
+  outline-offset: 3px;
+}
+
+.mp-contact {
+  max-width: 62ch;
+  margin: 22px 0 0;
+  font-family: var(--mp-body);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--mp-contact);
+}
+
+.mp-contact a {
+  color: inherit;
   text-decoration: none;
-  transition: background-color 0.25s ease;
 }
 
-.btn--primary:hover {
-  background-color: #0f57c4;
+.mp-contact a:hover {
+  text-decoration: underline;
 }
 
-@media (max-width: 700px) {
-  .membership {
-    padding: 110px 24px 60px;
+.mp-terms {
+  margin: 14px 0 0;
+  font-family: var(--mp-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #85858e;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .mp-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .mp-header {
+    margin-top: clamp(64px, 4vw, 40px);
+  }
+  .mp-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .mp-card__title {
+    font-size: 1.5rem;
+    max-width: 11ch;
+  }
+  .mp-card__desc {
+    max-width: 30ch;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
-  .membership__title {
-    font-size: 30px;
+  .mp-fees {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
-  .membership__subtitle {
-    font-size: 14px;
+  .mp-fees__label {
+    padding-right: 0;
+  }
+
+  .mp-fees__item {
+    align-self: stretch;
+    padding: 20px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--mp-fees-divider);
+  }
+
+  .mp-contact {
+    font-size: 0.95rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mp-cta {
+    transition: none;
   }
 }

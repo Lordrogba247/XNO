@@ -1,10 +1,25 @@
 import './Gallery.css';
-import img1 from '../../assets/gallery-1.png';
-import img2 from '../../assets/gallery-2.png';
-import img3 from '../../assets/gallery-3.png';
-import img4 from '../../assets/gallery-4.png';
-import img5 from '../../assets/gallery-5.png';
-import img6 from '../../assets/gallery-6.png';
+import img1 from '../../assets/jgallery/gallery-1.jpg';
+import img2 from '../../assets/jgallery/gallery-2.jpg';
+import img3 from '../../assets/jgallery/gallery-3.jpg';
+import img4 from '../../assets/jgallery/gallery-4.jpg';
+import img5 from '../../assets/jgallery/gallery-5.jpg';
+import img6 from '../../assets/jgallery/gallery-6.jpg';
+import img7 from '../../assets/jgallery/gallery-7.jpg';
+import img8 from '../../assets/jgallery/gallery-8.jpg';
+import img9 from '../../assets/jgallery/gallery-9.jpg';
+import img10 from '../../assets/jgallery/gallery-10.jpg';
+
+import img11 from '../../assets/agallery/gallery-11.jpg';
+import img12 from '../../assets/agallery/gallery-12.jpg';
+import img13 from '../../assets/agallery/gallery-13.jpg';
+import img14 from '../../assets/agallery/gallery-14.jpg';
+import img15 from '../../assets/agallery/gallery-15.jpg';
+import img16 from '../../assets/agallery/gallery-16.jpg';
+import img17 from '../../assets/agallery/gallery-17.jpg';
+import img18 from '../../assets/agallery/gallery-18.jpg';
+import img19 from '../../assets/agallery/gallery-19.jpg';
+import img20 from '../../assets/agallery/gallery-20.jpg';
 
 function GalleryMonth({ month, images }) {
     return (
@@ -25,11 +40,12 @@ function GalleryMonth({ month, images }) {
 }
 
 function Gallery() {
-    const monthlyImages = [img1, img3, img5, img2, img6, img4];
+    const julyImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+    const augustImages = [img11, img12, img13, img14, img15, img16, img17, img18, img19, img20];
 
     const months = [
-        { name: 'July', images: monthlyImages },
-        { name: 'August', images: monthlyImages },
+        { name: 'July', images: julyImages },
+        { name: 'August', images: augustImages },
     ];
 
     return (

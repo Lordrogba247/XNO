@@ -25,13 +25,13 @@
   border-radius: 16px;
   padding: 40px;
   margin: 0 auto 40px 40px;
-  max-width: 620px;
+  max-width: 820px;
 }
 
 .gallery-month__title {
   font-family: "Kalnia", Georgia, serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   color: #1f4b43;
   margin: 0 0 20px 0;
 }
@@ -51,7 +51,7 @@
   display: block;
 }
 
-.gallery-month__img--1 {
+/* .gallery-month__img--1 {
   grid-column: 1;
   grid-row: 1;
   height: 160px;
@@ -86,7 +86,7 @@
   grid-column: 2;
   grid-row: 3;
   height: 140px;
-}
+} */
 
 /* Tablet */
 @media (max-width: 700px) {
@@ -124,7 +124,7 @@
     gap: 16px;
   }
 
-  .gallery-month__img--1,
+  /* .gallery-month__img--1,
   .gallery-month__img--2,
   .gallery-month__img--3,
   .gallery-month__img--4,
@@ -134,5 +134,5 @@
     grid-row: auto;
     height: 220px;
     width: 100%;
-  }
+  } */
 }
