@@ -19,10 +19,10 @@
   text-align: left;
   flex-wrap: wrap;
 }
-
+/* 
 .contact__block {
   min-width: 180px;
-}
+} */
 
 .contact__label {
   font-family: "Kalnia", Georgia, serif;
