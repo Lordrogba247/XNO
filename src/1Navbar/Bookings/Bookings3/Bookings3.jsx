@@ -57,8 +57,8 @@ function EventBooking() {
                     phone: formData.phone,
                     date: formData.date,
                     email: formData.email,
-                    booth_reservation: formData.boothReservation ? 'Yes ($50.00)' : 'No',
-                    bottle_service: formData.bottleService ? 'Yes ($120.00)' : 'No',
+                    booth_reservation: formData.boothReservation ? 'Yes ' : 'No',
+                    bottle_service: formData.bottleService ? 'Yes ' : 'No',
                 }),
             });
 
@@ -143,7 +143,7 @@ function EventBooking() {
 
                     <div className="event-booking__addons">
                         <label className="checkbox-row">
-                            <span>Booth Reservation&nbsp;&nbsp;($50.00)</span>
+                            <span>Booth Reservation</span>
                             <input
                                 type="checkbox"
                                 name="boothReservation"
@@ -153,7 +153,7 @@ function EventBooking() {
                         </label>
 
                         <label className="checkbox-row">
-                            <span>Bottle Service ($120.00)</span>
+                            <span>Bottle Service </span>
                             <input
                                 type="checkbox"
                                 name="bottleService"
