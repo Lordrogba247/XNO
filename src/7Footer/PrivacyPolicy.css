@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
+
+.pp-page {
+  --pp-bg: #f4f4f5;
+  --pp-card: #ffffff;
+  --pp-ink: #0b0f2b; /* headings + bold copy */
+  --pp-text: #1e4d47; /* body copy (deep green) */
+  --pp-date: #2f6f66; /* effective date */
+  --pp-font-display: "Kalnia", "Times New Roman", serif;
+  --pp-font-body: "Libre Bodoni", "Bodoni MT", Georgia, serif;
+
+  min-height: 100vh;
+  padding: 3rem 1.25rem 4rem;
+  background: var(--pp-bg);
+  font-family: var(--pp-font-body);
+  color: var(--pp-text);
+  box-sizing: border-box;
+}
+
+.pp-page *,
+.pp-page *::before,
+.pp-page *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Card ---------- */
+.pp-card {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 3.5rem 3.5rem 4.5rem;
+  background: var(--pp-card);
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  /* margin-top: 20px; */
+}
+
+/* ---------- Title ---------- */
+.pp-title {
+  margin: 0 0 1.75rem;
+  font-family: var(--pp-font-display);
+  font-weight: 600;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: 0.005em;
+  color: var(--pp-ink);
+}
+
+/* ---------- Intro ---------- */
+.pp-intro {
+  margin-bottom: 2rem;
+}
+
+.pp-date {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--pp-date);
+}
+
+/* ---------- Sections ---------- */
+.pp-section {
+  margin-top: 2rem;
+}
+
+.pp-heading {
+  margin: 0 0 0.35rem;
+  font-family: var(--pp-font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--pp-ink);
+}
+
+/* ---------- Copy ---------- */
+.pp-text,
+.pp-label,
+.pp-strong {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.pp-text,
+.pp-label {
+  color: var(--pp-text);
+}
+
+.pp-strong {
+  font-weight: 700;
+  color: var(--pp-ink);
+}
+
+/* ---------- Lists ---------- */
+.pp-list {
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  list-style: none;
+}
+
+.pp-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--pp-text);
+}
+
+.pp-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--pp-text);
+}
+
+/* ---------- Address ---------- */
+.pp-address {
+  font-style: normal;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .pp-page {
+    padding: 1rem 0.75rem 2rem;
+  }
+
+  .pp-card {
+    padding: 2rem 1.25rem 2.5rem;
+    border-radius: 1rem;
+    margin-top: 40px;
+  }
+
+  .pp-text,
+  .pp-label,
+  .pp-strong,
+  .pp-list li,
+  .pp-date {
+    font-size: 0.875rem;
+  }
+}

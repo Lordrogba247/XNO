@@ -46,7 +46,7 @@ function Bookings2() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    access_key: 'YOUR_ACCESS_KEY_HERE', // replace with your real Web3Forms key
+                    access_key: 'a2ab2ad4-6fa5-4fbb-bc2d-d74afdbf943f', // replace with your real Web3Forms key
                     subject: 'New Booking Request - XNO',
                     first_name: formData.firstName,
                     phone: formData.phone,

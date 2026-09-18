@@ -9,7 +9,6 @@ function Footer() {
             </p>
 
             <ul className="footer-bottom__links">
-                <li><Link to="/faqs">FAQs</Link></li>
                 <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                 <li><Link to="/terms-of-use">Term of use</Link></li>
             </ul>

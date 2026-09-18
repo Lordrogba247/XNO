@@ -15,7 +15,8 @@ import Events from './1Navbar/Eventz/Events';
 import Gallery from './1Navbar/Gallery/Gallery';
 import Contact from './1Navbar/Contact/Contact';
 import ScrollToTop from './ScrollToTop';
-
+import PrivacyPolicy from './7Footer/Privacy';
+import TermsOfUse from './7Footer/Terms'
 function Home() {
   return (
     <>
@@ -44,6 +45,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/membership" element={<Membership />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
       </Routes>
 
       <Footer />
