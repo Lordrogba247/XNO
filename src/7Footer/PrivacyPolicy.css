@@ -123,6 +123,7 @@
 @media (max-width: 640px) {
   .pp-page {
     padding: 1rem 0.75rem 2rem;
+    margin-top: 40px;
   }
 
   .pp-card {

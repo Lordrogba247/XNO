@@ -119,10 +119,10 @@ export default function MembershipPerks({
 
                 <p className="mp-contact">
                     Visit the Lounge at XNO - 1800 Davenport Road, Toronto, ON M6N 4X3 or
-                    Contact us Via <a href="tel:+19052660331">+1 905-266-0331</a> or Send
-                    us a mail - <a href="mailto:xnoinc@gmail.com">xnoinc@gmail.com</a>
-                </p>
 
+                </p>
+                <p className="mp-contact2">Contact us Via<a href="tel:+14162819393">+1 (416) 281-9393</a> or </p>
+                <p className="mp-contact2">Send us a mail Via <a href="mailto:xnoinc@gmail.com">xnoinc@gmail.com</a></p>
                 <p className="mp-terms">Kindly Note that Terms &amp; Conditions apply</p>
             </div>
         </main>

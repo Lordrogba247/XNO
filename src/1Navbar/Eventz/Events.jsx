@@ -53,7 +53,7 @@ function Events() {
             <p className="events-page__notice">
                 Please be advised that by clicking any of our events you agree that
                 you are <span className="events-page__highlight">18+</span> and would
-                be willing tender your Ids upon request.
+                be willing to tender your Ids upon request.
             </p>
 
             <div className="events-page__grid">

@@ -7,7 +7,7 @@
   --mp-text-muted: #6d6d76;
   --mp-blue: #2b6be0;
   --mp-blue-text: #1a4fd6;
-  --mp-contact: #0b2a8f;
+  --mp-contact: #6d6d76;
   --mp-fees-bg: #02021a;
   --mp-fees-divider: #1c3a9c;
   --mp-fees-caption: #d6d6e4;
@@ -195,7 +195,7 @@
 }
 
 .mp-contact {
-  max-width: 62ch;
+  max-width: 63ch;
   margin: 22px 0 0;
   font-family: var(--mp-body);
   font-size: 1rem;
@@ -204,7 +204,16 @@
   line-height: 1.5;
   color: var(--mp-contact);
 }
-
+.mp-contact2 {
+  color: #0b2a8f;
+  max-width: 62ch;
+  /* margin: 22px 0 0; */
+  font-family: var(--mp-body);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+}
 .mp-contact a {
   color: inherit;
   text-decoration: none;
@@ -233,7 +242,7 @@
 
 @media (max-width: 620px) {
   .mp-header {
-    margin-top: clamp(64px, 4vw, 40px);
+    margin-top: clamp(100px, 4vw, 40px);
   }
   .mp-grid {
     grid-template-columns: 1fr;
