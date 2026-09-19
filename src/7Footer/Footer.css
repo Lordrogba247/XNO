@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 20px 80px;
   background-color: #f4f3ef;
-  border-top: 1px solid #01001c;
+  /* border-top: 1px solid #01001c; */
   flex-wrap: wrap;
   gap: 12px;
 }
