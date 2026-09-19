@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Bookings.css';
-import restaurantImg from '../../assets/restaurant.png';
+import restaurantImg from '../../assets/restaurant.jpg';
 import partyImg from '../../assets/nightlife.jpg';
 import privateImg from '../../assets/lounge.jpg';
 

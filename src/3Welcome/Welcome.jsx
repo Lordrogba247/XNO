@@ -1,5 +1,5 @@
 import './Welcome.css';
-import restaurantImg from '../assets/restaurant.png';
+import restaurantImg from '../assets/restaurant.jpg';
 import loungeImg from '../assets/lounge.jpg';
 import nightlifeImg from '../assets/nightlife.jpg';
 import logo from '../assets/logo3.png'
