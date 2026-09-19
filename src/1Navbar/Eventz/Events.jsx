@@ -3,6 +3,12 @@ import './Events.css';
 import fridayNight1 from '../../assets/flyer3.jpg';
 import blackCardSaturday1 from '../../assets/flyer2.jpg';
 import fridayNight2 from '../../assets/flyer1.jpg';
+import event4 from '../../assets/flyer4.jpg'
+import event5 from '../../assets/flyer5.jpg'
+import event6 from '../../assets/flyer6.jpg'
+import event7 from '../../assets/flyer7.jpg'
+import event8 from '../../assets/flyer8.jpg'
+
 
 function EventCard({ img, title, link }) {
     const isExternal = link.startsWith('http');
@@ -43,6 +49,27 @@ function Events() {
         {
             img: fridayNight2,
             title: 'Friday Night Party',
+            link: '/bookings3',
+        },
+        {
+            img: event4,
+            title: 'Afro Energizer',
+            link: '/bookings3',
+        }, {
+            img: event5,
+            title: 'Omo Naija',
+            link: '/bookings3',
+        }, {
+            img: event6,
+            title: 'Nigeria Independence Party',
+            link: '/bookings3',
+        }, {
+            img: event7,
+            title: 'Beraks Cave',
+            link: '/bookings3',
+        }, {
+            img: event8,
+            title: 'Halllowen in Wakanda',
             link: '/bookings3',
         },
     ];
