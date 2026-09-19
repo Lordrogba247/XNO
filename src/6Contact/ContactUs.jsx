@@ -56,7 +56,7 @@ function ContactUs() {
                 <div className="contact__block">
                     <h3 className="contact__label">Contacts</h3>
                     <p className="contact__text">
-                        <a href="tel:+19052660331">+1 905-266-0331</a>
+                        <a href="tel:+14162819393">+1 (416) 281-9393</a>
                     </p>
                     <p className="contact__text">
                         <a href="mailto:xnoinc@gmail.com">xnoinc@gmail.com</a>
@@ -107,7 +107,7 @@ function ContactUs() {
                         </a>
 
                         <a
-                            href="https://tiktok.com/@xno"
+                            href="https://tiktok.com/@xnonightlife"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="contact__social-icon contact__social-icon--tiktok"

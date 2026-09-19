@@ -39,7 +39,9 @@
   color: #2f4f4f;
   max-width: 297px;
 }
-
+.welcome-img {
+  height: 90px;
+}
 /* Cards */
 .welcome__cards {
   position: relative;

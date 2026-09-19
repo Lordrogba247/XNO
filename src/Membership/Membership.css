@@ -42,7 +42,7 @@
   justify-content: center;
   gap: clamp(16px, 3vw, 32px);
   margin-bottom: clamp(24px, 4vw, 40px);
-  margin-top: clamp(24px, 4vw, 40px);
+  margin-top: clamp(24px, 4vw, 90px);
 }
 
 .mp-header__throne {

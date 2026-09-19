@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Bookings.css';
 import restaurantImg from '../../assets/restaurant.png';
-import partyImg from '../../assets/nightlife.png';
-import privateImg from '../../assets/lounge.png';
+import partyImg from '../../assets/nightlife.jpg';
+import privateImg from '../../assets/lounge.jpg';
 
 function ArrowIcon() {
     return (

@@ -1,7 +1,8 @@
 import './Welcome.css';
 import restaurantImg from '../assets/restaurant.png';
-import loungeImg from '../assets/lounge.png';
-import nightlifeImg from '../assets/nightlife.png';
+import loungeImg from '../assets/lounge.jpg';
+import nightlifeImg from '../assets/nightlife.jpg';
+import logo from '../assets/logo3.png'
 function Welcome() {
     const cards = [
         {
@@ -28,7 +29,8 @@ function Welcome() {
         <section className="welcome">
             <div className="welcome__text">
                 <p className="welcome__eyebrow">Welcome to</p>
-                <h2 className="welcome__title">XNO</h2>
+                {/* <h2 className="welcome__title">XNO</h2> */}
+                <img src={logo} alt="XNO" className="navbar__icon welcome-img" />
                 <p className="welcome__desc">
                     XNO Restaurant & Lounge is where great food, refreshing drinks, and
                     unforgettable moments come together. Designed for dining,

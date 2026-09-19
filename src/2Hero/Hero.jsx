@@ -59,11 +59,11 @@ function Hero() {
                     <span>Nightlife.</span>
                 </h1>
 
-                <p className="hero__subtitle">...for those who know</p>
+                <p className="hero__subtitle">ForThoseWhoKnow.</p>
 
                 <div className="hero__actions">
                     <Link to="/bookings" className="btn btn--primary">
-                        Reserve a Table <ArrowIcon />
+                        Reserve a Booth <ArrowIcon />
                     </Link>
                     <Link to="/events" className="btn btn--outline">
                         View Events <ArrowIcon />
