@@ -8,6 +8,8 @@ import event5 from '../../assets/flyer5.jpg'
 import event6 from '../../assets/flyer6.jpg'
 import event7 from '../../assets/flyer7.jpg'
 import event8 from '../../assets/flyer8.jpg'
+import Weekend1 from '../../assets/weekend1.jpg'
+import Weekend2 from '../../assets/weekend2.jpg'
 
 
 function EventCard({ img, title, link }) {
@@ -36,6 +38,15 @@ function EventCard({ img, title, link }) {
 
 function Events() {
     const events = [
+        {
+            img: Weekend1,
+            title: 'Friday Night Party',
+            link: 'https://www.eventbrite.ca/e/paint-sip-shisha-registration-1998694592329',
+        }, {
+            img: Weekend2,
+            title: 'Friday Night Party',
+            link: '/bookings3',
+        },
         {
             img: fridayNight1,
             title: 'Friday Night Party',
