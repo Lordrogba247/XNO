@@ -21,16 +21,16 @@ import img18 from '../../assets/agallery/gallery-18.jpg';
 import img19 from '../../assets/agallery/gallery-19.jpg';
 import img20 from '../../assets/agallery/gallery-20.jpg';
 
-import img21 from '../../assets/sgallery/gallery-21.jpg';
-import img22 from '../../assets/sgallery/gallery-22.jpg';
-import img23 from '../../assets/sgallery/gallery-23.jpg';
-import img24 from '../../assets/sgallery/gallery-24.jpg';
-import img25 from '../../assets/sgallery/gallery-25.jpg';
-import img26 from '../../assets/sgallery/gallery-26.jpg';
-import img27 from '../../assets/sgallery/gallery-27.jpg';
-import img28 from '../../assets/sgallery/gallery-28.jpg';
-import img29 from '../../assets/sgallery/gallery-29.jpg';
-import img30 from '../../assets/sgallery/gallery-30.jpg';
+import img21 from '../../assets/sgallery/gallery-21.JPG';
+import img22 from '../../assets/sgallery/gallery-22.JPG';
+import img23 from '../../assets/sgallery/gallery-23.JPG';
+import img24 from '../../assets/sgallery/gallery-24.JPG';
+import img25 from '../../assets/sgallery/gallery-25.JPG';
+import img26 from '../../assets/sgallery/gallery-26.JPG';
+import img27 from '../../assets/sgallery/gallery-27.JPG';
+import img28 from '../../assets/sgallery/gallery-28.JPG';
+import img29 from '../../assets/sgallery/gallery-29.JPG';
+import img30 from '../../assets/sgallery/gallery-30.JPG';
 
 function GalleryMonth({ month, images }) {
     return (
