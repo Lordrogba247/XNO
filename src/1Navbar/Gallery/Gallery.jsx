@@ -21,6 +21,17 @@ import img18 from '../../assets/agallery/gallery-18.jpg';
 import img19 from '../../assets/agallery/gallery-19.jpg';
 import img20 from '../../assets/agallery/gallery-20.jpg';
 
+import img21 from '../../assets/sgallery/gallery-21.jpg';
+import img22 from '../../assets/sgallery/gallery-22.jpg';
+import img23 from '../../assets/sgallery/gallery-23.jpg';
+import img24 from '../../assets/sgallery/gallery-24.jpg';
+import img25 from '../../assets/sgallery/gallery-25.jpg';
+import img26 from '../../assets/sgallery/gallery-26.jpg';
+import img27 from '../../assets/sgallery/gallery-27.jpg';
+import img28 from '../../assets/sgallery/gallery-28.jpg';
+import img29 from '../../assets/sgallery/gallery-29.jpg';
+import img30 from '../../assets/sgallery/gallery-30.jpg';
+
 function GalleryMonth({ month, images }) {
     return (
         <div className="gallery-month">
@@ -42,10 +53,11 @@ function GalleryMonth({ month, images }) {
 function Gallery() {
     const julyImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
     const augustImages = [img11, img12, img13, img14, img15, img16, img17, img18, img19, img20];
-
+    const septemberImages = [img21, img22, img23, img24, img25, img26, img27, img28, img29, img30];
     const months = [
         { name: 'July', images: julyImages },
         { name: 'August', images: augustImages },
+        { name: 'September', images: septemberImages },
     ];
 
     return (
