@@ -37,7 +37,7 @@ function Events() {
             link: '/bookings3',
         }, {
             img: event9,
-            title: 'Halllowen in Wakanda',
+            title: 'Friday Fiesta',
             link: '/bookings3',
         },
         {
