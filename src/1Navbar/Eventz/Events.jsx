@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './Events.css';
 import event7 from '../../assets/flyer7.jpg'
 import event8 from '../../assets/flyer8.jpg'
+import event9 from '../../assets/flyer9.jpeg'
 
 
 function EventCard({ img, title, link }) {
@@ -35,6 +36,11 @@ function Events() {
             title: 'Beraks Cave',
             link: '/bookings3',
         }, {
+            img: event9,
+            title: 'Halllowen in Wakanda',
+            link: '/bookings3',
+        },
+        {
             img: event8,
             title: 'Halllowen in Wakanda',
             link: '/bookings3',
