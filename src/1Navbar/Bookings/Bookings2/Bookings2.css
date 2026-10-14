@@ -5,6 +5,8 @@
 
 .bookings2__container {
   max-width: 730px;
+  margin-bottom: clamp(24px, 4vw, 40px);
+  margin-top: clamp(24px, 4vw, 90px);
 }
 
 .bookings2__title {
