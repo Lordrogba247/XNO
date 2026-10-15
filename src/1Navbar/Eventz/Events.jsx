@@ -3,6 +3,7 @@ import './Events.css';
 import event7 from '../../assets/flyer7.jpg'
 import event8 from '../../assets/flyer8.jpg'
 import event9 from '../../assets/flyer9.jpeg'
+import event10 from '../../assets/flyer10.jpeg'
 
 
 function EventCard({ img, title, link }) {
@@ -38,6 +39,11 @@ function Events() {
         }, {
             img: event9,
             title: 'Friday Fiesta',
+            link: '/bookings3',
+        },
+        {
+            img: event10,
+            title: 'Afrobeat Saturday',
             link: '/bookings3',
         },
         {
